@@ -29,7 +29,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
     {
       icon: <Trophy className="w-8 h-8" />,
       title: '竞赛参与',
-      description: '参加编程竞赛，挑战自我极限',
+      description: '？',
       gradient: 'from-green-400 to-emerald-500'
     }
   ];
