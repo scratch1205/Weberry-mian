@@ -35,9 +35,9 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
   ];
 
   const achievements = [
-    { label: '团队成员', value: '50+', icon: <Users className="w-6 h-6" /> },
-    { label: '完成项目', value: '20+', icon: <Target className="w-6 h-6" /> },
-    { label: '获得奖项', value: '10+', icon: <Trophy className="w-6 h-6" /> },
+    { label: '团队成员', value: '-1', icon: <Users className="w-6 h-6" /> },
+    { label: '完成项目', value: '-5', icon: <Target className="w-6 h-6" /> },
+    { label: '获得奖项', value: '1', icon: <Trophy className="w-6 h-6" /> },
     { label: '代码贡献', value: '1000+', icon: <Code className="w-6 h-6" /> }
   ];
 
