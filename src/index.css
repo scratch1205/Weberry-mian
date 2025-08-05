@@ -20,4 +20,37 @@
   .group:not(:hover) {
     transition: all 0.7s ease;
   }
+  
+  /* 导航栏玻璃反光动画 */
+  @keyframes glass-reflection {
+    0% { transform: translateX(-100%) skewX(-15deg); }
+    100% { transform: translateX(200%) skewX(-15deg); }
+  }
+  
+  .glass-reflection {
+    animation: glass-reflection 3s ease-in-out infinite;
+  }
+  
+  /* 页面切换动画 */
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
 }
