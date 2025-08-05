@@ -157,7 +157,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
             </h2>
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
               无论你是编程新手还是资深开发者，我们都欢迎你的到来。<br />
-              让我们一起在编程的道路上互相学习，共同成长！
+              서로에게서 배우고 프로그래밍의 길에서 함께 성장합시다!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
