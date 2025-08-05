@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 relative overflow-hidden cursor-none">
+    <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-indigo-50 relative overflow-hidden cursor-none">
       {/* Custom cursor */}
       <div 
         className="fixed w-8 h-8 backdrop-blur-md bg-white/30 rounded-full pointer-events-none z-50 border border-white/50 shadow-2xl transition-transform duration-150 ease-out"
