@@ -25,12 +25,6 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
       title: '创新实践',
       description: '探索新技术，实现创意想法',
       gradient: 'from-yellow-400 to-orange-500'
-    },
-    {
-      icon: <Trophy className="w-8 h-8" />,
-      title: '竞赛参与',
-      description: '？',
-      gradient: 'from-green-400 to-emerald-500'
     }
   ];
 
