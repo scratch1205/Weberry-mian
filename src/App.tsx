@@ -42,18 +42,19 @@ function App() {
     <div className="bg-gradient-to-br from-blue-50 via-sky-50 to-indigo-50 relative overflow-hidden cursor-none">
       {/* Custom cursor */}
       <div 
-        className="fixed w-8 h-8 backdrop-blur-md bg-white/30 rounded-full pointer-events-none z-50 border border-white/50 shadow-2xl transition-transform duration-150 ease-out"
+        className="fixed w-8 h-8 backdrop-blur-md bg-gradient-to-br from-sky-200 to-white rounded-full pointer-events-none z-[9999] border border-sky-300/60 transition-transform duration-150 ease-out"
         style={{
           left: mousePosition.x - 16,
           top: mousePosition.y - 16,
-          boxShadow: '0 8px 32px rgba(255, 255, 255, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4)',
+          boxShadow: '0 12px 48px rgba(135, 206, 235, 0.6), 0 8px 24px rgba(135, 206, 235, 0.4), 0 4px 12px rgba(135, 206, 235, 0.3), 0 0 0 1px rgba(135, 206, 235, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.8)',
         }}
       />
       <div 
-        className="fixed w-2 h-2 bg-white/80 rounded-full pointer-events-none z-50 shadow-sm"
+        className="fixed w-2 h-2 bg-gradient-to-br from-sky-400 to-sky-200 rounded-full pointer-events-none z-[9999] shadow-lg"
         style={{
           left: mousePosition.x - 4,
           top: mousePosition.y - 4,
+          boxShadow: '0 4px 16px rgba(135, 206, 235, 0.8), 0 2px 8px rgba(135, 206, 235, 0.6)',
         }}
       />
       
