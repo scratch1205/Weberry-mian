@@ -175,6 +175,7 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
               <div
                 key={project.name}
                 className="group relative backdrop-blur-2xl bg-white/30 rounded-3xl p-10 border border-white/40 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-110 hover:bg-white/50 hover:z-10 peer overflow-hidden"
+                className="group relative backdrop-blur-3xl bg-white/20 rounded-3xl p-10 border border-white/30 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-110 hover:bg-white/35 hover:z-10 peer overflow-hidden"
                 style={{ 
                   animationDelay: `${index * 200}ms`,
                   transform: `translateY(${Math.max(0, scrollY - 800) * -0.1}px)`
@@ -237,6 +238,7 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block backdrop-blur-2xl bg-white/30 rounded-3xl p-8 border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/50 overflow-hidden"
+                className="group block backdrop-blur-3xl bg-white/20 rounded-3xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/35 overflow-hidden"
                 style={{ 
                   animationDelay: `${index * 100}ms`,
                   transform: `translateY(${Math.max(0, scrollY - 1400) * -0.05}px)`
@@ -272,7 +274,7 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
       {/* Statistics Section */}
       <section className="py-32 px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="backdrop-blur-2xl bg-white/30 rounded-[3rem] p-12 md:p-16 border border-white/40 shadow-2xl">
+          <div className="backdrop-blur-3xl bg-white/20 rounded-[3rem] p-12 md:p-16 border border-white/30 shadow-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
               访问统计
             </h2>
@@ -280,7 +282,7 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
               {stats.map((stat, index) => (
                 <div
                   key={stat.id}
-                  className="text-center backdrop-blur-sm bg-white/20 rounded-3xl p-8 border border-white/30 hover:bg-white/40 transition-all duration-500 hover:scale-110 group"
+                  className="text-center backdrop-blur-xl bg-white/15 rounded-3xl p-8 border border-white/25 hover:bg-white/30 transition-all duration-500 hover:scale-110 group"
                 >
                   <div className="flex justify-center mb-4 text-blue-600 group-hover:scale-125 transition-transform duration-300">
                     {stat.icon}
@@ -294,15 +296,17 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
             </div>
             
             {/* Additional stats */}
-            <div className="mt-12 pt-8 border-t border-white/20">
+            <div className="mt-12 pt-8 border-t border-white/15">
               <div className="grid md:grid-cols-2 gap-6 text-center">
                 <div className="backdrop-blur-sm bg-white/20 rounded-2xl p-6 border border-white/30">
+                <div className="backdrop-blur-xl bg-white/15 rounded-2xl p-6 border border-white/25">
                   <div className="text-lg text-slate-600 mb-1">本页阅读量</div>
                   <div className="text-2xl font-bold text-slate-800">
                     <span id="busuanzi_page_pv">加载中...</span> 次
                   </div>
                 </div>
                 <div className="backdrop-blur-sm bg-white/20 rounded-2xl p-6 border border-white/30">
+                <div className="backdrop-blur-xl bg-white/15 rounded-2xl p-6 border border-white/25">
                   <div className="text-lg text-slate-600 mb-1">本页访客数</div>
                   <div className="text-2xl font-bold text-slate-800">
                     <span id="busuanzi_page_uv">加载中...</span> 人
@@ -316,9 +320,9 @@ const HomePage: React.FC<HomePageProps> = ({ mousePosition, scrollY }) => {
 
       {/* Footer */}
       <footer className="py-20 px-6 text-center relative z-10">
-        <div className="backdrop-blur-2xl bg-white/20 rounded-3xl max-w-3xl mx-auto p-12 border border-white/30 shadow-xl">
+        <div className="backdrop-blur-3xl bg-white/15 rounded-3xl max-w-3xl mx-auto p-12 border border-white/25 shadow-xl">
           <h3 className="text-2xl font-bold text-slate-800 mb-4">Weberry Studio</h3>
-          <div className="mb-6 p-4 backdrop-blur-sm bg-white/20 rounded-2xl border border-white/30">
+          <div className="mb-6 p-4 backdrop-blur-xl bg-white/15 rounded-2xl border border-white/25">
             <div className="text-lg text-slate-600 mb-2">网站已运行</div>
             <div className="text-2xl font-bold text-slate-800 font-mono">
               {runtime}

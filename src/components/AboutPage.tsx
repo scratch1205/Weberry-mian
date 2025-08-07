@@ -81,7 +81,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ mousePosition, scrollY }) => {
       {/* MIT License Section */}
       <section className="py-20 px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="backdrop-blur-2xl bg-white/30 rounded-3xl p-12 border border-white/40 shadow-2xl">
+          <div className="backdrop-blur-3xl bg-white/20 rounded-3xl p-12 border border-white/30 shadow-2xl">
             <div className="flex items-center justify-center mb-8">
               <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center text-white shadow-lg">
                 <Shield className="w-10 h-10" />
@@ -138,6 +138,7 @@ SOFTWARE.`}</pre>
               <div
                 key={principle.title}
                 className="group backdrop-blur-2xl bg-white/30 rounded-3xl p-8 border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/50"
+                className="group backdrop-blur-3xl bg-white/20 rounded-3xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/35"
                 style={{ 
                   animationDelay: `${index * 100}ms`,
                   transform: `translateY(${Math.max(0, scrollY - 800) * -0.05}px)`
@@ -171,6 +172,7 @@ SOFTWARE.`}</pre>
               <div
                 key={feature.title}
                 className="group backdrop-blur-2xl bg-white/30 rounded-3xl p-10 border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/50"
+                className="group backdrop-blur-3xl bg-white/20 rounded-3xl p-10 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/35"
                 style={{ 
                   animationDelay: `${index * 150}ms`,
                   transform: `translateY(${Math.max(0, scrollY - 1200) * -0.05}px)`
@@ -194,7 +196,7 @@ SOFTWARE.`}</pre>
       {/* Vision Section */}
       <section className="py-20 px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="backdrop-blur-2xl bg-white/30 rounded-3xl p-12 border border-white/40 shadow-2xl">
+          <div className="backdrop-blur-3xl bg-white/20 rounded-3xl p-12 border border-white/30 shadow-2xl">
             <div className="flex justify-center mb-8">
               <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white shadow-lg">
                 <Zap className="w-10 h-10" />
@@ -209,14 +211,17 @@ SOFTWARE.`}</pre>
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div className="backdrop-blur-sm bg-white/20 rounded-2xl p-6 border border-white/30">
+              <div className="backdrop-blur-xl bg-white/15 rounded-2xl p-6 border border-white/25">
                 <div className="text-3xl font-bold text-slate-800 mb-2">2025</div>
                 <div className="text-slate-600">成立年份</div>
               </div>
               <div className="backdrop-blur-sm bg-white/20 rounded-2xl p-6 border border-white/30">
+              <div className="backdrop-blur-xl bg-white/15 rounded-2xl p-6 border border-white/25">
                 <div className="text-3xl font-bold text-slate-800 mb-2">∞</div>
                 <div className="text-slate-600">创意无限</div>
               </div>
               <div className="backdrop-blur-sm bg-white/20 rounded-2xl p-6 border border-white/30">
+              <div className="backdrop-blur-xl bg-white/15 rounded-2xl p-6 border border-white/25">
                 <div className="text-3xl font-bold text-slate-800 mb-2">100%</div>
                 <div className="text-slate-600">开源精神</div>
               </div>

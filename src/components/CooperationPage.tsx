@@ -54,7 +54,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
             </p>
             
             {/* 洛谷团队链接 */}
-            <div className="backdrop-blur-2xl bg-white/30 rounded-3xl p-8 border border-white/40 shadow-2xl max-w-2xl mx-auto mb-16">
+            <div className="backdrop-blur-3xl bg-white/20 rounded-3xl p-8 border border-white/30 shadow-2xl max-w-2xl mx-auto mb-16">
               <div className="flex items-center justify-center mb-6">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-400 to-pink-500 flex items-center justify-center text-white shadow-lg">
                   <Users className="w-8 h-8" />
@@ -94,6 +94,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
               <div
                 key={feature.title}
                 className="group backdrop-blur-2xl bg-white/30 rounded-3xl p-8 border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/50"
+                className="group backdrop-blur-3xl bg-white/20 rounded-3xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:bg-white/35"
                 style={{ 
                   animationDelay: `${index * 100}ms`,
                   transform: `translateY(${Math.max(0, scrollY - 600) * -0.05}px)`
@@ -113,7 +114,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
       {/* Achievements */}
       <section className="py-20 px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="backdrop-blur-2xl bg-white/30 rounded-[3rem] p-12 md:p-16 border border-white/40 shadow-2xl">
+          <div className="backdrop-blur-3xl bg-white/20 rounded-[3rem] p-12 md:p-16 border border-white/30 shadow-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
               团队成就
             </h2>
@@ -122,6 +123,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
                 <div
                   key={achievement.label}
                   className="text-center backdrop-blur-sm bg-white/20 rounded-3xl p-8 border border-white/30 hover:bg-white/40 transition-all duration-500 hover:scale-110 group"
+                  className="text-center backdrop-blur-xl bg-white/15 rounded-3xl p-8 border border-white/25 hover:bg-white/30 transition-all duration-500 hover:scale-110 group"
                 >
                   <div className="flex justify-center mb-4 text-blue-600 group-hover:scale-125 transition-transform duration-300">
                     {achievement.icon}
@@ -140,7 +142,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
       {/* Join Us Section */}
       <section className="py-20 px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="backdrop-blur-2xl bg-white/30 rounded-3xl p-12 border border-white/40 shadow-2xl">
+          <div className="backdrop-blur-3xl bg-white/20 rounded-3xl p-12 border border-white/30 shadow-2xl">
             <div className="flex justify-center mb-8">
               <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white shadow-lg">
                 <Heart className="w-10 h-10" />
@@ -163,6 +165,7 @@ const CooperationPage: React.FC<CooperationPageProps> = ({ mousePosition, scroll
                 立即加入 <ExternalLink className="w-5 h-5" />
               </a>
               <button className="inline-flex items-center gap-3 backdrop-blur-sm bg-white/20 text-slate-700 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/30 transition-all duration-300 border border-white/30">
+              <button className="inline-flex items-center gap-3 backdrop-blur-xl bg-white/15 text-slate-700 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/25 transition-all duration-300 border border-white/25">
                 了解更多 <Star className="w-5 h-5" />
               </button>
             </div>
