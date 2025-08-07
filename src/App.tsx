@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navigation from './components/Navigation';
+import SettingsButton from './components/SettingsButton';
 import HomePage from './components/HomePage';
 import CooperationPage from './components/CooperationPage';
 import AboutPage from './components/AboutPage';
@@ -76,6 +77,9 @@ function App() {
         onPageChange={setCurrentPage}
         mousePosition={mousePosition}
       />
+
+      {/* Settings Button */}
+      <SettingsButton mousePosition={mousePosition} />
 
       {/* Page Content */}
       <main className="relative z-10">
