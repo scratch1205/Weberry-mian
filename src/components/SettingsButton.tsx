@@ -40,16 +40,16 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
         {/* 主按钮容器 */}
         <button
           onClick={() => setIsModalOpen(true)}
-          className="relative backdrop-blur-3xl bg-white/10 rounded-full p-3 border border-white/20 shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
+          className="relative backdrop-blur-2xl bg-white/20 rounded-full p-3 border border-white/30 shadow-2xl hover:bg-white/30 transition-all duration-300 hover:scale-110 group"
         >
           {/* 玻璃内反光 */}
-          <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/60 via-transparent to-transparent opacity-40 pointer-events-none" />
-          <div className="absolute inset-1 rounded-full bg-gradient-to-tl from-white/30 via-transparent to-white/15 opacity-60 pointer-events-none" />
+          <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+          <div className="absolute inset-1 rounded-full bg-gradient-to-tl from-white/20 via-transparent to-white/10 opacity-80 pointer-events-none" />
           
           <Settings className="w-6 h-6 text-slate-700 group-hover:text-slate-900 transition-colors duration-300 group-hover:rotate-90" />
           
           {/* 底部高光 */}
-          <div className="absolute bottom-0 left-2 right-2 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+          <div className="absolute bottom-0 left-2 right-2 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
         </button>
         
         {/* 外部阴影和反光 */}
@@ -64,16 +64,16 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
         <div className="fixed inset-0 z-[9998] flex items-center justify-center p-6">
           {/* Backdrop */}
           <div 
-            className="absolute inset-0 bg-black/10 backdrop-blur-md"
+            className="absolute inset-0 bg-black/20 backdrop-blur-sm"
             onClick={() => setIsModalOpen(false)}
           />
           
           {/* Modal Window */}
           <div className="relative w-full max-w-md">
             {/* macOS Window */}
-            <div className="backdrop-blur-3xl bg-white/70 rounded-2xl border border-white/30 shadow-2xl overflow-hidden">
+            <div className="backdrop-blur-2xl bg-white/90 rounded-2xl border border-white/40 shadow-2xl overflow-hidden">
               {/* Title Bar */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-white/15 bg-gradient-to-r from-white/30 to-white/20">
+              <div className="flex items-center justify-between px-6 py-4 border-b border-white/20 bg-gradient-to-r from-white/50 to-white/30">
                 <div className="flex items-center space-x-3">
                   {/* macOS Traffic Lights */}
                   <div className="flex space-x-2">
@@ -112,8 +112,8 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
                         onClick={() => setLanguage(lang.code)}
                         className={`w-full flex items-center justify-between p-3 rounded-xl transition-all duration-200 ${
                           language === lang.code
-                            ? 'bg-blue-500/15 border-2 border-blue-500/30'
-                            : 'bg-white/20 border-2 border-transparent hover:bg-white/35'
+                            ? 'bg-blue-500/20 border-2 border-blue-500/40'
+                            : 'bg-white/30 border-2 border-transparent hover:bg-white/50'
                         }`}
                       >
                         <div className="flex items-center space-x-3">
@@ -140,8 +140,8 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
                         onClick={() => setTheme(themeOption.value)}
                         className={`w-full flex items-center justify-between p-3 rounded-xl transition-all duration-200 ${
                           theme === themeOption.value
-                            ? 'bg-purple-500/15 border-2 border-purple-500/30'
-                            : 'bg-white/20 border-2 border-transparent hover:bg-white/35'
+                            ? 'bg-purple-500/20 border-2 border-purple-500/40'
+                            : 'bg-white/30 border-2 border-transparent hover:bg-white/50'
                         }`}
                       >
                         <span className="font-medium text-slate-800">{themeOption.name}</span>
@@ -162,8 +162,8 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
                     onClick={() => setAnimations(!animations)}
                     className={`w-full flex items-center justify-between p-3 rounded-xl transition-all duration-200 ${
                       animations
-                        ? 'bg-green-500/15 border-2 border-green-500/30'
-                        : 'bg-white/20 border-2 border-transparent hover:bg-white/35'
+                        ? 'bg-green-500/20 border-2 border-green-500/40'
+                        : 'bg-white/30 border-2 border-transparent hover:bg-white/50'
                     }`}
                   >
                     <span className="font-medium text-slate-800">启用动画效果</span>
@@ -178,7 +178,7 @@ const SettingsButton: React.FC<SettingsButtonProps> = ({ mousePosition }) => {
                 </div>
 
                 {/* About Section */}
-                <div className="pt-4 border-t border-white/15">
+                <div className="pt-4 border-t border-white/20">
                   <div className="text-center space-y-2">
                     <p className="text-sm text-slate-600">Weberry Studio</p>
                     <p className="text-xs text-slate-500">版本 1.0.0</p>

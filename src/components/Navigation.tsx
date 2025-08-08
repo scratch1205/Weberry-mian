@@ -43,18 +43,18 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange, mous
       />
       
       {/* 主导航容器 */}
-      <div className="relative backdrop-blur-3xl bg-white/10 rounded-full px-2 py-2 border border-white/20 shadow-2xl">
+      <div className="relative backdrop-blur-2xl bg-white/20 rounded-full px-2 py-2 border border-white/30 shadow-2xl">
         {/* 玻璃内反光 */}
-        <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/60 via-transparent to-transparent opacity-40 pointer-events-none" />
-        <div className="absolute inset-1 rounded-full bg-gradient-to-tl from-white/30 via-transparent to-white/15 opacity-60 pointer-events-none" />
+        <div className="absolute inset-1 rounded-full bg-gradient-to-br from-white/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+        <div className="absolute inset-1 rounded-full bg-gradient-to-tl from-white/20 via-transparent to-white/10 opacity-80 pointer-events-none" />
         
         {/* 活动指示器 */}
         <div
-          className="absolute top-2 h-12 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full transition-all duration-500 ease-out backdrop-blur-xl border border-white/15 shadow-lg"
+          className="absolute top-2 h-12 bg-gradient-to-r from-blue-500/30 to-indigo-500/30 rounded-full transition-all duration-500 ease-out backdrop-blur-sm border border-white/20 shadow-lg"
           style={{
             left: indicatorStyle.left + 8,
             width: indicatorStyle.width,
-            boxShadow: '0 0 30px rgba(59, 130, 246, 0.2), inset 0 1px 0 rgba(255,255,255,0.4)'
+            boxShadow: '0 0 20px rgba(59, 130, 246, 0.3), inset 0 1px 0 rgba(255,255,255,0.3)'
           }}
         />
         
@@ -77,7 +77,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange, mous
             >
               {/* 悬停效果 */}
               {hoveredItem === item.id && currentPage !== item.id && (
-                <div className="absolute inset-0 bg-white/15 rounded-full backdrop-blur-xl border border-white/20" />
+                <div className="absolute inset-0 bg-white/20 rounded-full backdrop-blur-sm border border-white/30" />
               )}
               
               <div className={`transition-all duration-300 ${currentPage === item.id ? 'scale-110' : 'group-hover:scale-105'}`}>
@@ -87,14 +87,14 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage, onPageChange, mous
               
               {/* 活跃状态的光晕 */}
               {currentPage === item.id && (
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/15 to-indigo-400/15 blur-sm animate-pulse" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-indigo-400/20 blur-sm animate-pulse" />
               )}
             </button>
           ))}
         </div>
         
         {/* 底部高光 */}
-        <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+        <div className="absolute bottom-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
       </div>
       
       {/* 外部阴影和反光 */}
